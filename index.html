@@ -20,97 +20,83 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Portfolio</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <!--<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li> -->
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/">Game Dev</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/web-development.html">Web Dev</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-            </div>
-        </nav>
+              </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Deacon Mizzi</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Game Design - Web Design - Illustration - Video Editing</p>
+        <section class="hero-video">
+            <video autoplay muted loop playsinline id="bg-video">
+              <source src="assets/vid/GameDev.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="intro-overlay" id="introOverlay">
+                <h1>I’m Deacon Mizzi, a developer<br>& designer focused on<br><strong>immersive<br>experiences!</strong></h1>
             </div>
-        </header>
+          </section>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/logo.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Shrouded.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/wayne.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/christmas.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/spaceexplorers.png" alt="..." />
-                        </div>
-                    </div>
+        <section class="project-panel bg-a">
+            <div class="project-content reverse">
+              <div class="project-text">
+                <h2>Evershroud</h2>
+                <p><strong>Genre:</strong> Pixel art action RPG</p>
+                <p><strong>Setting:</strong> Medieval forest village</p>
+                <p><strong>Goal:</strong> Defeat monsters and save your home</p>
+                <p><strong>Features:</strong> Exploration, side quests, boss fights</p>
+              </div>
+              <div class="project-image">
+                <img src="assets/img/Evershroud.png" alt="Evershroud">
+              </div>
             </div>
-        </section>
+          </section>
+          
+          <!-- Project 2: Text Right, Image Left -->
+          <section class="project-panel bg-b">
+            <div class="project-content">
+              <div class="project-image">
+                <img src="assets/img/FireworkFrenzy.png" alt="Firework Frenzy">
+              </div>
+              <div class="project-text">
+                <h2>Firework Frenzy</h2>
+                <p><strong>Genre:</strong> Bullet hell minigame</p>
+                <p><strong>Goal:</strong> Dodge fireworks and survive as long as possible</p>
+                <p><strong>Feature:</strong> Difficulty increases with enemies</p>
+                <p><strong>Bonus:</strong> 10 coins = 5s shield</p>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Project 3: Text Left, Image Right -->
+          <section class="project-panel bg-a">
+            <div class="project-content reverse">
+              <div class="project-text">
+                <h2>Animalia – Grassland Showdown</h2>
+                <p><strong>Genre:</strong> 2D Side-Scroller Platformer</p>
+                <p><strong>Theme:</strong> Dark Fantasy Action</p>
+                <p><strong>Features:</strong> Boss fight, dash, high jump per character</p>
+              </div>
+              <div class="project-image">
+                <img src="assets/img/animaliags.png" alt="Animalia">
+              </div>
+            </div>
+          </section>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -335,6 +321,8 @@
                 </div>
             </div>
         </div>
+
+
         
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -345,5 +333,23 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            function handleScroll() {
+              const overlay = document.getElementById('introOverlay');
+              const video = document.getElementById('bg-video');
+              const scrollY = window.scrollY;
+          
+              if (scrollY > 10) {
+                overlay.classList.add('show');
+                video.classList.add('blur');
+              } else {
+                overlay.classList.remove('show');
+                video.classList.remove('blur');
+              }
+            }
+          
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('load', handleScroll);
+          </script>
     </body>
 </html>
