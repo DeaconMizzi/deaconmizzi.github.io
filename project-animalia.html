@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Animalia – Project Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Game Dev</a></li>
+            <li class="nav-item"><a class="nav-link active" href="web-development.html">Web Dev</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+
+    <!-- Main Project Content -->
+    <main class="project-page">
+      <section class="project-header">
+        <img src="assets/img/animalia.png" alt="Animalia Banner" class="project-banner">
+      </section>
+
+      <section class="project-summary">
+        <p>
+            The Animalia website serves as the official online hub for the animated series, 
+            offering an inside look at its story, characters, latest updates, and featured media.
+        </p>
+      </section>
+
+      <section class="project-video">
+        <div class="youtube-embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/EQLvTYVMEjk?autoplay=1&mute=1&loop=1&controls=0&playlist=EQLvTYVMEjk&modestbranding=1&showinfo=0&playsinline=1"
+            title="Evershroud Trailer"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section class="project-gallery">
+        <img src="assets/img/portfolio/animalia1.png" alt="Menu Screen" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animalia2.png" alt="Signs" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animalia3.png" alt="Metidan Square" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animalia4.png" alt="Forgotten Maze Area" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animalia5.png" alt="Boss" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animalia6.png" alt="Boss" onclick="openLightbox(this)">
+      </section>
+
+      <section class="project-details">
+        <h3>Description</h3>
+        <p>Evershroud is a 2D pixel art adventure game and my first full solo project in the genre. Inspired by classic Legend of Zelda titles, it features five handcrafted areas 
+          to explore, each filled with NPCs, quests, and secrets. Players interact with characters to uncover objectives, ultimately working toward a climactic boss battle. 
+          Along the way, you can break pots for coins, which act as a simple score and reward system.</p>
+
+        <h3>Development Tools</h3>
+        <p>Unity, VS Code, Aseprite, Photoshop</p>
+
+        <h3>Challenges and Insights</h3>
+        <p>One of the key challenges was implementing the enemy behaviour, specifically having enemies “wake up” and respond when the player entered their proximity. 
+          This logic initially worked but broke after upgrading the project to a newer version of Unity, which affected several core systems. 
+          Movement was also impacted but was successfully reworked and now functions smoothly.
+          While Evershroud is in a solid playable state, there’s plenty of room to grow. I plan to add more enemy types, new attack mechanics, an inventory system, quest tracking, 
+          a minimap, and additional explorable areas. As my first adventure game, I'm proud of how far it's come, and excited to keep developing it into a deeper, 
+          more complete experience.</p>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Socials</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/DeaconMizzi"><i class="fab fa-fw fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Expanded view">
+      </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

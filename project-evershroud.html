@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="index.html">
           <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -47,32 +47,43 @@
       </section>
 
       <section class="project-video">
-        <video controls poster="assets/img/evershroud-poster.png">
-          <source src="assets/vid/evershroud-trailer.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="youtube-embed-container">
+          <iframe
+            src="https://www.youtube.com/embed/EQLvTYVMEjk?autoplay=1&mute=1&loop=1&controls=0&playlist=EQLvTYVMEjk&modestbranding=1&showinfo=0&playsinline=1"
+            title="Evershroud Trailer"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
       </section>
 
       <section class="project-gallery">
-        <img src="assets/img/portfolio/" alt="Screenshot 1">
-        <img src="assets/img/evershroud2.png" alt="Screenshot 2">
-        <img src="assets/img/evershroud3.png" alt="Screenshot 3">
-        <p class="caption">NPC Quest System</p>
+        <img src="assets/img/portfolio/evershroud5.png" alt="Menu Screen">
+        <img src="assets/img/portfolio/evershroud1.png" alt="Signs">
+        <img src="assets/img/portfolio/evershroud2.png" alt="Metidan Square">
+        <img src="assets/img/portfolio/evershroud3.png" alt="Forgotten Maze Area">
+        <img src="assets/img/portfolio/evershroud4.png" alt="Boss">
       </section>
 
       <section class="project-details">
+        <h3>Description</h3>
+        <p>Evershroud is a 2D pixel art adventure game and my first full solo project in the genre. Inspired by classic Legend of Zelda titles, it features five handcrafted areas 
+          to explore, each filled with NPCs, quests, and secrets. Players interact with characters to uncover objectives, ultimately working toward a climactic boss battle. 
+          Along the way, you can break pots for coins, which act as a simple score and reward system.</p>
+
         <h3>Development Tools</h3>
         <p>Unity, VS Code, Aseprite, Photoshop</p>
 
-        <h3>Key Features</h3>
-        <p><strong>Quest System:</strong> NPCs offer optional quests such as enemy hunting and item retrieval</p>
-        <p><strong>Boss Battle:</strong> Ends with a large-scale fight to test player skill</p>
-
         <h3>Challenges and Insights</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc est lectus, imperdiet quis sapien a, lacinia tincidunt nunc.</p>
+        <p>One of the key challenges was implementing the enemy behaviour, specifically having enemies “wake up” and respond when the player entered their proximity. 
+          This logic initially worked but broke after upgrading the project to a newer version of Unity, which affected several core systems. 
+          Movement was also impacted but was successfully reworked and now functions smoothly.
+          While Evershroud is in a solid playable state, there’s plenty of room to grow. I plan to add more enemy types, new attack mechanics, an inventory system, quest tracking, 
+          a minimap, and additional explorable areas. As my first adventure game, I'm proud of how far it's come, and excited to keep developing it into a deeper, 
+          more complete experience.</p>
       </section>
     </main>
-
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
