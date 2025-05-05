@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Animalia – Project Page</title>
+    <title>LinkUp – Project Page</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
@@ -36,39 +36,59 @@
     <!-- Main Project Content -->
     <main class="project-page">
       <section class="project-header">
-        <img src="assets/img/animalia.png" alt="Animalia Banner" class="project-banner">
+        <img src="assets/img/LinkUp.png" alt="Animalia Banner" class="project-banner">
       </section>
 
       <section class="project-summary">
         <p>
-            The Animalia website serves as the official online hub for the animated series, 
-            offering an inside look at its story, characters, latest updates, and featured media.
+          LinkUp is a social media platform where users can connect with others, share content, and participate in discussions. 
+          This project includes functionalities such as user registration, login, post creation, comments, likes, tags, user roles, and follower relationships.
         </p>
       </section>
 
       <section class="project-gallery">
-        <img src="assets/img/portfolio/animalia1.png" alt="Menu Screen" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia2.png" alt="Signs" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia3.png" alt="Metidan Square" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia4.png" alt="Forgotten Maze Area" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia5.png" alt="Boss" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia6.png" alt="Boss" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/Linkup1.png" alt="Posts" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/Linkup2.png" alt="Roles" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/Linkup3.png" alt="Account" onclick="openLightbox(this)">
+        <br>
+        <img src="assets/img/portfolio/Linkup4.png" alt="Post Page" onclick="openLightbox(this)">
       </section>
 
       <section class="project-details">
         <h3>Description</h3>
-        <p>The Animalia Website serves as the official online hub for the animated series, offering fans and viewers a centralized space to explore the show's story, characters, 
-            updates, and media content. Designed to be both visually engaging and intuitive, the site reinforces the series’ identity through character-driven color palettes, 
-            responsive layouts, and interactive media.</p>
+        <p>LinkUp is a full-featured social media platform designed to let users connect, interact, and share content in a modern, community-driven environment. Built with both usability and scalability in mind, the platform supports a wide range of social features to simulate a real-world online network.
+
+          Users can register and log in securely, create and edit posts, comment on others' content, like and tag posts, and follow or be followed by other users. 
+          The system includes role-based access controls, enabling different permissions for admins, moderators, and regular users. All interactions are tracked and dynamically 
+          displayed through personalized feeds and profile pages, offering a seamless and engaging user experience.</p>
         <div class="project-wireframes">
             <h3>Wireframes & Planning</h3>
             <p>
-                Initial wireframes created to plan the Animalia website layout, content flow, and responsiveness. 
-                These helped guide development of the homepage, character pages, and media sections.
+              Before beginning full development of <strong>LinkUp</strong>, a comprehensive set of wireframes was created to plan the user interface, flow, and feature layout. These wireframes helped visualize the core user journey from registration to daily use, ensuring clarity and consistency across all screens.
+            </p>
+            <ul>
+              <li>
+                <strong>Feed and Post Pages:</strong> A streamlined feed layout allows users to scroll through posts, interact with content via likes and comments, and view individual posts with dedicated comment sections.
+              </li>
+              <li>
+                <strong>Authentication Flow:</strong> Registration and login pages are simple and accessible, guiding users through account creation and secure sign-in.
+              </li>
+              <li>
+                <strong>User Profiles:</strong> Each profile includes email, bio, and account management options like editing, password changes, and account deletion, all wireframed for clear usability.
+              </li>
+              <li>
+                <strong>Interactive Features:</strong> The FAQ and Contact pages provide support functionality, while a sticky header with quick-access icons ensures intuitive navigation.
+              </li>
+              <li>
+                <strong>Modular Layouts:</strong> Reusable design components such as buttons, forms, and cards were outlined early on for consistency during development.
+              </li>
+            </ul>
+            <p>
+              These wireframes served as a critical reference throughout the build process, making it easier to align UI decisions with functionality goals.
             </p>
             
             <img 
-                src="assets/img/portfolio/animaliawf.png" 
+                src="assets/img/portfolio/linkupwf.png" 
                 alt="Wireframe overview for Animalia website" 
                 class="wireframe-thumbnail"
                 onclick="openLightbox(this)"
@@ -76,29 +96,11 @@
         </div>
         <h3>Challenges and Insights</h3>
         <p>
-            Designing a site for a fictional animated series introduced unique challenges:
-          </p>
-          <ul>
-            <li>Ensuring consistency between sketch concepts and real implementation</li>
-            <li>Balancing playful visuals with functional navigation</li>
-            <li>Managing responsive design for custom character layouts</li>
-          </ul>
-          <h3>Limitations & Future Improvements</h3>
-            <p>
-            While the current site successfully delivers the intended experience, there are areas to grow:
-            </p>
-            <ul>
-            <li>Adding a searchable episode guide or interactive world map</li>
-            <li>Expanding the news section with filtering or tagging features</li>
-            <li>Implementing a content management system for easier updates</li>
-            </ul>
-            <br>
+          One of the main challenges during development was working with PHP and managing the database. As it was my first time building a full platform with server-side functionality, I had to spend time practicing and improving my understanding of PHP and SQL interactions.
+        </p>
         <p>
-            <div class="button-container">
-                <a href="https://deaconmizzi.github.io/Animalia/" target="_blank" class="btn btn-primary enlarged-btn">
-                  🔗 Check out the Website
-                </a>
-              </div>
+          I encountered several issues, including problems with posts not saving correctly to the database and inconsistencies with user account data. Debugging these issues helped reinforce my backend skills and gave me a deeper understanding of how to build more reliable and secure web applications.
+        </p>
       </section>
     </main>
     <!-- Footer -->
