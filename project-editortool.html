@@ -56,9 +56,9 @@
       </section>
 
       <section class="project-gallery">
-        <img src="assets/img/portfolio/shrouded1.png" alt="Screenshot 1">
-        <img src="assets/img/portfolio/shrouded2.png" alt="Screenshot 2">
-        <img src="assets/img/portfolio/shrouded3.png" alt="Screenshot 3">
+        <img src="assets/img/portfolio/shrouded1.png" alt="Screenshot 1" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/shrouded2.png" alt="Screenshot 2" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/shrouded3.png" alt="Screenshot 3" onclick="openLightbox(this)">
       </section>
 
       <section class="project-details">
@@ -90,6 +90,9 @@
     </main>
 
     <!-- Scripts -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>

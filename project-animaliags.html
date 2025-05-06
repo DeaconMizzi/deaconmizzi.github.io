@@ -46,10 +46,10 @@
       </section>
 
       <section class="project-gallery">
-        <img src="assets/img/portfolio/animaliags1.png" alt="Cutsecene">
-        <img src="assets/img/portfolio/animaliags2.png" alt="End of Cutscene">
-        <img src="assets/img/portfolio/animaliags3.png" alt="Character Select">
-        <img src="assets/img/portfolio/animaliags4.png" alt="Boss Fight">
+        <img src="assets/img/portfolio/animaliags1.png" alt="Cutsecene" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animaliags2.png" alt="End of Cutscene" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animaliags3.png" alt="Character Select" onclick="openLightbox(this)">
+        <img src="assets/img/portfolio/animaliags4.png" alt="Boss Fight" onclick="openLightbox(this)">
       </section>
 
       <section class="project-details">
@@ -68,6 +68,9 @@
       </section>
     </main>
     <!-- Scripts -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>

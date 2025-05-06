@@ -11027,7 +11027,7 @@ html {
 }
 .intro-overlay {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, 50%);
   text-align: center;
@@ -11102,7 +11102,7 @@ html {
   font-family: 'Fira Code', monospace;
   font-size: 1.2rem;
   color: #F0F0F0;
-  line-height: 1.6;
+  line-height: 1.1;
 }
 .project-image {
   padding: 0;
@@ -11234,6 +11234,49 @@ html {
   font-size: 1.3em;
   font-family: 'Satoshi', sans-serif;
 }
+/* Project Intro Section - Summary Left, Image Right */
+.project-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 60px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.project-intro .project-summary {
+  flex: 1 1 400px;
+  text-align: left;
+  margin: 0;
+}
+
+.project-intro .project-header {
+  flex: 1 1 400px;
+  text-align: right;
+  margin: 0;
+}
+
+.project-intro .project-banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .project-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-intro .project-header,
+  .project-intro .project-summary {
+    text-align: center;
+  }
+}
 .lightbox {
   display: none;
   position: fixed;
@@ -11252,6 +11295,8 @@ html {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease;
+  margin-top: 60px; /* Adds space from the top */
+
 }
 
 .lightbox.show {

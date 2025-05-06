@@ -64,3 +64,4 @@ function openLightbox(imgElement) {
     const lightbox = document.getElementById('lightbox');
     lightbox.classList.remove('show');
   }
+
