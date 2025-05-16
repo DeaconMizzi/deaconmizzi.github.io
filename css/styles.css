@@ -11046,7 +11046,7 @@ html {
 
 .intro-overlay h1 {
   font-family: 'Satoshi', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.6;
   color: #F0F0F0;
 }
@@ -11054,7 +11054,7 @@ html {
 .intro-overlay p {
   font-family: 'Fira Code', monospace;
   color: #FFF9C4;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .project-panel {
