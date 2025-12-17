@@ -1,67 +1,74 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+// DM Modern homepage interactions
+document.addEventListener('DOMContentLoaded', () => {
+  // Footer year
+  const y = document.getElementById('dmYear');
+  if (y) y.textContent = String(new Date().getFullYear());
 
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
+  // Mobile menu
+  const toggle = document.querySelector('.dm-nav-toggle');
+  const mobileMenu = document.querySelector('.dm-mobile-menu');
+  if (toggle && mobileMenu) {
+    const setOpen = (open) => {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mobileMenu.hidden = !open;
     };
+    setOpen(false);
 
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      setOpen(!open);
     });
 
+    // Close menu on link click
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => setOpen(false));
+    });
+  }
+
+  // Filters
+  const filterButtons = Array.from(document.querySelectorAll('.dm-filter'));
+  const sections = Array.from(document.querySelectorAll('.dm-collection'));
+
+  const normalize = (s) => (s || '').toLowerCase().trim();
+
+  const applyFilter = (filter) => {
+    const f = normalize(filter);
+
+    // Update button states
+    filterButtons.forEach(btn => {
+      const active = normalize(btn.dataset.filter) === f;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    // For each collection, show/hide cards by primary category
+    sections.forEach(section => {
+      const cards = Array.from(section.querySelectorAll('.dm-card'));
+      let anyVisible = false;
+
+      cards.forEach(card => {
+        const category = normalize(card.getAttribute('data-category'));
+        const show = (f === 'all') || (category === f);
+
+        card.style.display = show ? '' : 'none';
+        if (show) anyVisible = true;
+      });
+
+      // Hide entire collection if nothing in it matches the filter
+      section.style.display = anyVisible ? '' : 'none';
+    });
+  };
+
+  // Initial
+  applyFilter('all');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+  });
+
+  // Optional: close mobile menu if you jump to #work
+  if (location.hash === '#work') {
+    const mm = document.querySelector('.dm-mobile-menu');
+    if (mm) mm.hidden = true;
+  }
 });
-
-function openLightbox(imgElement) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightboxImg.src = imgElement.src;
-    lightbox.classList.add('show');
-  }
-
-  function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.classList.remove('show');
-  }
-

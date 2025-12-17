@@ -11215,6 +11215,16 @@ html {
   color: #ccc;
 }
 
+/* Bigger style only for Bird’s Eye View page */
+.bev-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* larger columns */
+  gap: 30px; /* more breathing room */
+}
+
+.bev-gallery img {
+  border-radius: 16px; /* slightly softer look */
+}
+
 /* Details & Feature Sections */
 .project-details {
   padding: 20px 0;
@@ -11226,6 +11236,9 @@ html {
   font-size: 1.4rem;
   color: #F5D547;
   margin-top: 30px;
+}
+.project-details h2 {
+  color: #F5D547;
 }
 
 
