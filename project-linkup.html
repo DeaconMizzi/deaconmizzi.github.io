@@ -1,115 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>LinkUp – Project Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LinkUp – Project</title>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Game Dev</a></li>
-            <li class="nav-item"><a class="nav-link active" href="web-development.html">Web Dev</a></li>
-            <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/dm-modern.css" rel="stylesheet" />
+</head>
+
+<body class="dm-body">
+  <header class="dm-nav" id="mainNav">
+    <div class="dm-container dm-nav-inner">
+      <a class="dm-brand" href="index.html" aria-label="Home">
+        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
+      </a>
+
+      <nav class="dm-nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="dm-mobile-menu dm-container" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dm-project-hero" aria-label="Project intro">
+      <div class="dm-container">
+        <div class="dm-breadcrumb">
+          <a href="index.html#work">← Back to Work</a>
         </div>
-      </div>
-    </nav>
 
-    <br>
-    <br>
-    <!-- Main Project Content -->
-    <main class="project-page">
-      <section class="project-intro">
-        <div class="project-summary">
-          <p>
+        <div class="dm-project-hero-grid">
+          <div>
+            <h1 class="dm-project-title">LinkUp</h1>
+            <div class="dm-prose">
+<p>
             LinkUp is a social media platform where users can connect with others, share content, and participate in discussions. 
             This project includes functionalities such as user registration, login, post creation, comments, likes, tags, user roles, and follower relationships.
-          </p>      </div>
-        <div class="project-header">
-          <img src="assets/img/LinkUp.png" alt="Evershroud Banner" class="project-banner">
+          </p>
+          </div>
+          </div>
+
+          <div>
+            <div class="dm-project-hero-media"><img src="assets/img/LinkUp.png" alt="Evershroud Banner" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dm-project-body" aria-label="Project content">
+      <div class="dm-container">
+
+        
+
+        
+      <section class="dm-project-block" aria-label="Gallery">
+        <div class="dm-project-block-head">
+          <h2 class="dm-section-title">Gallery</h2>
+        </div>
+        <div class="dm-gallery">
+          <button class="dm-shot" type="button" data-shot="assets/img/portfolio/Linkup1.png" aria-label="Posts">
+            <img src="assets/img/portfolio/Linkup1.png" alt="Posts" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/Linkup2.png" aria-label="Roles">
+            <img src="assets/img/portfolio/Linkup2.png" alt="Roles" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/Linkup3.png" aria-label="Account">
+            <img src="assets/img/portfolio/Linkup3.png" alt="Account" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/Linkup4.png" aria-label="Post Page">
+            <img src="assets/img/portfolio/Linkup4.png" alt="Post Page" loading="lazy" onclick="openLightbox(this)">
+          </button>
         </div>
       </section>
-      
-      <section class="project-gallery">
-        <img src="assets/img/portfolio/Linkup1.png" alt="Posts" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/Linkup2.png" alt="Roles" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/Linkup3.png" alt="Account" onclick="openLightbox(this)">
-        <br>
-        <img src="assets/img/portfolio/Linkup4.png" alt="Post Page" onclick="openLightbox(this)">
-      </section>
 
-      <section class="project-details">
-        <h3>Description</h3>
-        <p>LinkUp is a full-featured social media platform designed to let users connect, interact, and share content in a modern, community-driven environment. Built with both usability and scalability in mind, the platform supports a wide range of social features to simulate a real-world online network.
+        
+
+        <section class="dm-project-block" aria-label="Details">
+          <div class="dm-project-block-head">
+            <h2 class="dm-section-title">Details</h2>
+          </div>
+          <div class="dm-prose">
+<h3>Description</h3>
+<p>LinkUp is a full-featured social media platform designed to let users connect, interact, and share content in a modern, community-driven environment. Built with both usability and scalability in mind, the platform supports a wide range of social features to simulate a real-world online network.
 
           Users can register and log in securely, create and edit posts, comment on others' content, like and tag posts, and follow or be followed by other users. 
           The system includes role-based access controls, enabling different permissions for admins, moderators, and regular users. All interactions are tracked and dynamically 
           displayed through personalized feeds and profile pages, offering a seamless and engaging user experience.</p>
-        <div class="project-wireframes">
-            <h3>Wireframes & Planning</h3>
-            <p>
+<div class="project-wireframes">
+<h3>Wireframes &amp; Planning</h3>
+<p>
               Before beginning full development of <strong>LinkUp</strong>, a comprehensive set of wireframes was created to plan the user interface, flow, and feature layout. These wireframes helped visualize the core user journey from registration to daily use, ensuring clarity and consistency across all screens.
             </p>
-            <ul>
-              <li>
-                <strong>Feed and Post Pages:</strong> A streamlined feed layout allows users to scroll through posts, interact with content via likes and comments, and view individual posts with dedicated comment sections.
+<ul>
+<li>
+<strong>Feed and Post Pages:</strong> A streamlined feed layout allows users to scroll through posts, interact with content via likes and comments, and view individual posts with dedicated comment sections.
               </li>
-              <li>
-                <strong>Authentication Flow:</strong> Registration and login pages are simple and accessible, guiding users through account creation and secure sign-in.
+<li>
+<strong>Authentication Flow:</strong> Registration and login pages are simple and accessible, guiding users through account creation and secure sign-in.
               </li>
-              <li>
-                <strong>User Profiles:</strong> Each profile includes email, bio, and account management options like editing, password changes, and account deletion, all wireframed for clear usability.
+<li>
+<strong>User Profiles:</strong> Each profile includes email, bio, and account management options like editing, password changes, and account deletion, all wireframed for clear usability.
               </li>
-              <li>
-                <strong>Interactive Features:</strong> The FAQ and Contact pages provide support functionality, while a sticky header with quick-access icons ensures intuitive navigation.
+<li>
+<strong>Interactive Features:</strong> The FAQ and Contact pages provide support functionality, while a sticky header with quick-access icons ensures intuitive navigation.
               </li>
-              <li>
-                <strong>Modular Layouts:</strong> Reusable design components such as buttons, forms, and cards were outlined early on for consistency during development.
+<li>
+<strong>Modular Layouts:</strong> Reusable design components such as buttons, forms, and cards were outlined early on for consistency during development.
               </li>
-            </ul>
-            <p>
+</ul>
+<p>
               These wireframes served as a critical reference throughout the build process, making it easier to align UI decisions with functionality goals.
             </p>
-            
-            <img 
-                src="assets/img/portfolio/linkupwf.png" 
-                alt="Wireframe overview for Animalia website" 
-                class="wireframe-thumbnail"
-                onclick="openLightbox(this)"
-            />
-        </div>
-        <h3>Challenges and Insights</h3>
-        <p>
+<img alt="Wireframe overview for Animalia website" class="wireframe-thumbnail" onclick="openLightbox(this)" src="assets/img/portfolio/linkupwf.png">
+</img></div>
+<h3>Challenges and Insights</h3>
+<p>
           One of the main challenges during development was working with PHP and managing the database. As it was my first time building a full platform with server-side functionality, I had to spend time practicing and improving my understanding of PHP and SQL interactions.
         </p>
-        <p>
+<p>
           I encountered several issues, including problems with posts not saving correctly to the database and inconsistencies with user account data. Debugging these issues helped reinforce my backend skills and gave me a deeper understanding of how to build more reliable and secure web applications.
         </p>
-      </section>
-    </main>
+          </div>
+        </section>
+
+      </div>
+    </section>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="Expanded view">
+      <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
+  </main>
+
+  <footer class="dm-footer">
+    <div class="dm-container">
+      <div class="dm-footer-inner">
+        <span>© <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#work">Work</a>
+        </span>
       </div>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>

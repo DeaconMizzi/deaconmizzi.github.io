@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Animalia – Project Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animalia – Project</title>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Game Dev</a></li>
-            <li class="nav-item"><a class="nav-link" href="web-development.html">Web Dev</a></li>
-            <li class="nav-item"><a class="nav-link active" href="design.html">Design</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/dm-modern.css" rel="stylesheet" />
+</head>
+
+<body class="dm-body">
+  <header class="dm-nav" id="mainNav">
+    <div class="dm-container dm-nav-inner">
+      <a class="dm-brand" href="index.html" aria-label="Home">
+        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
+      </a>
+
+      <nav class="dm-nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="dm-mobile-menu dm-container" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dm-project-hero" aria-label="Project intro">
+      <div class="dm-container">
+        <div class="dm-breadcrumb">
+          <a href="index.html#work">← Back to Work</a>
+        </div>
+
+        <div class="dm-project-hero-grid">
+          <div>
+            <h1 class="dm-project-title">Bird's Eye View</h1>
+            <div class="dm-prose">
+<p>Bird’s Eye View is a Maltese youth-led initiative dedicated to fostering impartial discussion and encouraging citizens to engage with current affairs beyond partisan divides. 
+            To reflect this mission, the branding was crafted with a focus on clarity, neutrality, and inclusivity. 
+            The logo conveys perspective and balance, while the modern typography system ensures accessibility and readability across platforms. 
+            A carefully chosen color palette, built around teal and contrasting tones of black and white, symbolizes openness, dialogue, and the meeting of diverse perspectives. 
+            Together, these elements establish a strong and consistent visual identity that supports Bird’s Eye View in positioning itself as a trusted, modern space for democratic 
+            debate and youth-led expression.</p>
+          </div>
+          </div>
+
+          <div>
+            
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <br>
-    <br>
-    <!-- Main Project Content -->
-    <main class="project-page">
-      <section class="project-intro">
-        <div class="project-summary">
-        <p>Bird’s Eye View is a Maltese youth-led initiative dedicated to fostering impartial discussion and encouraging citizens to engage with current affairs beyond partisan divides. 
-            To reflect this mission, the branding was crafted with a focus on clarity, neutrality, and inclusivity. 
-            The logo conveys perspective and balance, while the modern typography system ensures accessibility and readability across platforms. 
-            A carefully chosen color palette, built around teal and contrasting tones of black and white, symbolizes openness, dialogue, and the meeting of diverse perspectives. 
-            Together, these elements establish a strong and consistent visual identity that supports Bird’s Eye View in positioning itself as a trusted, modern space for democratic 
-            debate and youth-led expression.</p>
+    <section class="dm-project-body" aria-label="Project content">
+      <div class="dm-container">
+
+        
+
+        
+      <section class="dm-project-block" aria-label="Gallery">
+        <div class="dm-project-block-head">
+          <h2 class="dm-section-title">Gallery</h2>
+        </div>
+        <div class="dm-gallery">
+          <button class="dm-shot" type="button" data-shot="assets/img/portfolio/bevfront.png" aria-label="Guidelines Cover">
+            <img src="assets/img/portfolio/bevfront.png" alt="Guidelines Cover" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/BEVBrandGuideline_Logo Variations.png" aria-label="Logo Page">
+            <img src="assets/img/portfolio/BEVBrandGuideline_Logo Variations.png" alt="Logo Page" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/bevtypo_Typography.png" aria-label="Typography Page">
+            <img src="assets/img/portfolio/bevtypo_Typography.png" alt="Typography Page" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/bev_Colour Palette.png" aria-label="Color Palette">
+            <img src="assets/img/portfolio/bev_Colour Palette.png" alt="Color Palette" loading="lazy" onclick="openLightbox(this)">
+          </button>
         </div>
       </section>
-    <section class="project-details">
-        <h2>Brand Guidelines</h2>
-    </section>
-     <section class="project-gallery bev-gallery"> 
-        <img src="assets/img/portfolio/bevfront.png" alt="Guidelines Cover" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/BEVBrandGuideline_Logo Variations.png" alt="Logo Page" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/bevtypo_Typography.png" alt="Typography Page" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/bev_Colour Palette.png" alt="Color Palette" onclick="openLightbox(this)">
-    </section>
 
-      <section class="project-details">
-        <h3>Description</h3>
-        <p>Bird’s Eye View is a Maltese youth-led initiative dedicated to fostering impartial discussion and encouraging citizens to engage with current affairs beyond partisan divides. 
+        
+
+        <section class="dm-project-block" aria-label="Details">
+          <div class="dm-project-block-head">
+            <h2 class="dm-section-title">Details</h2>
+          </div>
+          <div class="dm-prose">
+<h2>Brand Guidelines</h2>
+<h3>Description</h3>
+<p>Bird’s Eye View is a Maltese youth-led initiative dedicated to fostering impartial discussion and encouraging citizens to engage with current affairs beyond partisan divides. 
             To reflect this mission, the branding was crafted with a focus on clarity, neutrality, and inclusivity. 
             The logo conveys perspective and balance, while the modern typography system ensures accessibility and readability across platforms. 
             A carefully chosen color palette, built around teal and contrasting tones of black and white, symbolizes openness, dialogue, and the meeting of diverse perspectives. 
             Together, these elements establish a strong and consistent visual identity that supports Bird’s Eye View in positioning itself as a trusted, modern space for democratic 
             debate and youth-led expression.</p>
-     
-        <h3>Challenges and Insights</h3>
-          <p> TBD </p>
-            <div class="button-container">
-                <a href="https://bev.mt/" target="_blank" class="btn btn-primary enlarged-btn">
+<h3>Challenges and Insights</h3>
+
+<div class="button-container">
+<a class="btn btn-primary enlarged-btn" href="https://bev.mt/" target="_blank">
                   🔗 Check out their Website
                 </a>
-              </div>
-      </section>
-    </main>
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="Expanded view">
+</div>
+          </div>
+        </section>
+
       </div>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
+  </main>
+
+  <footer class="dm-footer">
+    <div class="dm-container">
+      <div class="dm-footer-inner">
+        <span>© <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#work">Work</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>

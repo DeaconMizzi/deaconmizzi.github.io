@@ -1,96 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Evershroud – Project Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evershroud – Project</title>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Game Dev</a></li>
-            <li class="nav-item"><a class="nav-link" href="web-development.html">Web Dev</a></li>
-            <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/dm-modern.css" rel="stylesheet" />
+</head>
+
+<body class="dm-body">
+  <header class="dm-nav" id="mainNav">
+    <div class="dm-container dm-nav-inner">
+      <a class="dm-brand" href="index.html" aria-label="Home">
+        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
+      </a>
+
+      <nav class="dm-nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="dm-mobile-menu dm-container" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dm-project-hero" aria-label="Project intro">
+      <div class="dm-container">
+        <div class="dm-breadcrumb">
+          <a href="index.html#work">← Back to Work</a>
+        </div>
+
+        <div class="dm-project-hero-grid">
+          <div>
+            <h1 class="dm-project-title">Evershroud</h1>
+            <div class="dm-kv-grid">
+<div class="dm-kv"><div class="dm-k">GENRE</div><div class="dm-v">Top-down RPG</div></div>
+<div class="dm-kv"><div class="dm-k">GOAL</div><div class="dm-v">Restore the balance of a dying world</div></div>
+<div class="dm-kv"><div class="dm-k">FEATURES</div><div class="dm-v">Branching narrative, ability-based combat, dynamic world changes</div></div>
+          </div>
+          </div>
+
+          <div>
+            <div class="dm-project-hero-media"><img src="assets/img/lastember.png" alt="Last Ember Banner" loading="lazy"></div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <br>
-    <br>  
-    <!-- Main Project Content -->
-    <main class="project-page">
-      <section class="project-intro">
-        <div class="project-summary">
-                <p><strong>Genre:</strong> Top-down RPG</p>
-                <p><strong>Goal:</strong> Restore the balance of a dying world</p>
-                <p><strong>Features:</strong>Branching narrative, ability-based combat, dynamic world changes</p>
+    <section class="dm-project-body" aria-label="Project content">
+      <div class="dm-container">
+
+        
+
+        
+      <section class="dm-project-block" aria-label="Gallery">
+        <div class="dm-project-block-head">
+          <h2 class="dm-section-title">Gallery</h2>
         </div>
-        <div class="project-header">
-          <img src="assets/img/lastember.png" alt="Last Ember Banner" class="project-banner">
+        <div class="dm-gallery">
+          <button class="dm-shot" type="button" data-shot="assets/img/portfolio/s1.png" aria-label="3 Embers">
+            <img src="assets/img/portfolio/s1.png" alt="3 Embers" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/s2.png" aria-label="Wrath ember">
+            <img src="assets/img/portfolio/s2.png" alt="Wrath ember" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/s3.png" aria-label="Branhalm">
+            <img src="assets/img/portfolio/s3.png" alt="Branhalm" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/s4.png" aria-label="Abilities">
+            <img src="assets/img/portfolio/s4.png" alt="Abilities" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/s5.png" aria-label="Wrath Enemies">
+            <img src="assets/img/portfolio/s5.png" alt="Wrath Enemies" loading="lazy" onclick="openLightbox(this)">
+          </button>
         </div>
-      </section>
-<!--
-      <section class="project-video">
-        <div class="youtube-embed-container">
-          <iframe
-            src="https://www.youtube.com/embed/EQLvTYVMEjk?autoplay=1&mute=1&loop=1&controls=0&playlist=EQLvTYVMEjk&modestbranding=1&showinfo=0&playsinline=1"
-            title="Evershroud Trailer"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </section>
--->
-      <section class="project-gallery">
-        <img src="assets/img/portfolio/s1.png" alt="3 Embers" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/s2.png" alt="Wrath ember" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/s3.png" alt="Branhalm" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/s4.png" alt="Abilities" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/s5.png" alt="Wrath Enemies" onclick="openLightbox(this)">
       </section>
 
-      <section class="project-details">
-        <h3>Description</h3>
-        <p>The Last Ember is a 2D pixel art action-adventure game developed as part of my thesis on immersive narrative design. Inspired by games like Hyper Light Drifter and The Wizard Legend, 
+        
+      <section class="dm-project-block" aria-label="Tools & Tech">
+        <div class="dm-project-block-head">
+          <h2 class="dm-section-title">Tools & Tech</h2>
+        </div>
+        <div class="dm-tech-grid">
+
+          <div class="dm-tech-card">
+            <div class="dm-tech-icon">🎮</div>
+            <div class="dm-tech-title">Unity</div>
+            <div class="dm-tech-sub">Used in this project</div>
+          </div>
+
+          <div class="dm-tech-card">
+            <div class="dm-tech-icon">🛠️</div>
+            <div class="dm-tech-title">VS Code</div>
+            <div class="dm-tech-sub">Used in this project</div>
+          </div>
+
+          <div class="dm-tech-card">
+            <div class="dm-tech-icon">🧩</div>
+            <div class="dm-tech-title">Aseprite</div>
+            <div class="dm-tech-sub">Used in this project</div>
+          </div>
+
+          <div class="dm-tech-card">
+            <div class="dm-tech-icon">🖼️</div>
+            <div class="dm-tech-title">Photoshop</div>
+            <div class="dm-tech-sub">Used in this project</div>
+          </div>
+        </div>
+      </section>
+
+        <section class="dm-project-block" aria-label="Details">
+          <div class="dm-project-block-head">
+            <h2 class="dm-section-title">Details</h2>
+          </div>
+          <div class="dm-prose">
+<h3>Description</h3>
+<p>The Last Ember is a 2D pixel art action-adventure game developed as part of my thesis on immersive narrative design. Inspired by games like Hyper Light Drifter and The Wizard Legend, 
           it features a branching story where player choices shape both abilities and the world itself. Across three distinct regions, each tied to a thematic Ember, players face enemies, 
           solve moral dilemmas, and decide the fate of a crumbling land. Each Ember offers a new power and changes the environment in meaningful ways, leading to multiple endings based on 
           the player’s path.</p>
 
-        <h3>Development Tools</h3>
-        <p>Unity, VS Code, Aseprite, Photoshop</p>
-
-        <h3>Challenges and Insights</h3>
-        <p>One major challenge was building a flexible narrative system that could track player decisions and trigger dynamic changes across the world. 
+<h3>Challenges and Insights</h3>
+<p>One major challenge was building a flexible narrative system that could track player decisions and trigger dynamic changes across the world. 
           This required custom memory flags and a modular quest/dialogue system that could update the game state seamlessly. 
           Another key area was implementing responsive combat and abilities like the Bloomstep dash and FlameGuard shield, each with visual feedback and world interactions. 
           Testing and iteration were essential, especially when balancing abilities and ensuring clear player feedback. 
           The Last Ember is a prototype with multiple endings and a polished narrative flow. 
           It has been a passion project that combined storytelling, systems design, and player agency, core elements of what I aim to explore further in future projects.</p>
-      </section>
-    </main>
-    <!-- Scripts -->
+          </div>
+        </section>
+
+      </div>
+    </section>
+
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
       <img id="lightbox-img" src="" alt="Expanded view">
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  </main>
+
+  <footer class="dm-footer">
+    <div class="dm-container">
+      <div class="dm-footer-inner">
+        <span>© <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#work">Work</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>

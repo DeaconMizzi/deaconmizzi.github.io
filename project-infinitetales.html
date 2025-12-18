@@ -1,88 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>InfiniteTales – Project Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InfiniteTales – Project</title>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Game Dev</a></li>
-            <li class="nav-item"><a class="nav-link active" href="web-development.html">Web Dev</a></li>
-            <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/dm-modern.css" rel="stylesheet" />
+</head>
+
+<body class="dm-body">
+  <header class="dm-nav" id="mainNav">
+    <div class="dm-container dm-nav-inner">
+      <a class="dm-brand" href="index.html" aria-label="Home">
+        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
+      </a>
+
+      <nav class="dm-nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="dm-mobile-menu dm-container" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dm-project-hero" aria-label="Project intro">
+      <div class="dm-container">
+        <div class="dm-breadcrumb">
+          <a href="index.html#work">← Back to Work</a>
         </div>
-      </div>
-    </nav>
 
-    <br>
-    <br>
-    <!-- Main Project Content -->
-    <main class="project-page">
-      <section class="project-intro">
-        <div class="project-summary">
-          <p>
+        <div class="dm-project-hero-grid">
+          <div>
+            <h1 class="dm-project-title">InfiniteTales</h1>
+            <div class="dm-prose">
+<p>
             The Infinite Tales website is a digital bookstore platform featuring a wide range of titles. 
             Users can rate books, build personal wishlists, and explore new reads through a clean and accessible interface.
-          </p>        </div>
-        <div class="project-header">
-          <img src="assets/img/InfiniteTales.png" alt="Evershroud Banner" class="project-banner">
+          </p>
+          </div>
+          </div>
+
+          <div>
+            <div class="dm-project-hero-media"><img src="assets/img/InfiniteTales.png" alt="Evershroud Banner" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dm-project-body" aria-label="Project content">
+      <div class="dm-container">
+
+        
+
+        
+      <section class="dm-project-block" aria-label="Gallery">
+        <div class="dm-project-block-head">
+          <h2 class="dm-section-title">Gallery</h2>
+        </div>
+        <div class="dm-gallery">
+          <button class="dm-shot" type="button" data-shot="assets/img/portfolio/tales1.png" aria-label="Home Page">
+            <img src="assets/img/portfolio/tales1.png" alt="Home Page" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/tales2.png" aria-label="Latest Books">
+            <img src="assets/img/portfolio/tales2.png" alt="Latest Books" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/tales3.png" aria-label="Sign up">
+            <img src="assets/img/portfolio/tales3.png" alt="Sign up" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/tales4.png" aria-label="User Profile">
+            <img src="assets/img/portfolio/tales4.png" alt="User Profile" loading="lazy" onclick="openLightbox(this)">
+          </button>
         </div>
       </section>
 
-      <section class="project-gallery">
-        <img src="assets/img/portfolio/tales1.png" alt="Home Page" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/tales2.png" alt="Latest Books" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/tales3.png" alt="Sign up" onclick="openLightbox(this)">
-        <br>
-        <img src="assets/img/portfolio/tales4.png" alt="User Profile" onclick="openLightbox(this)">
-      </section>
+        
 
-      <section class="project-details">
-        <h3>Description</h3>
-        <p>The Infinite Tales website is a digital bookstore platform designed to make discovering and managing books simple and engaging. 
+        <section class="dm-project-block" aria-label="Details">
+          <div class="dm-project-block-head">
+            <h2 class="dm-section-title">Details</h2>
+          </div>
+          <div class="dm-prose">
+<h3>Description</h3>
+<p>The Infinite Tales website is a digital bookstore platform designed to make discovering and managing books simple and engaging. 
           It features a wide collection of titles across various genres, allowing users to browse, search, and explore new reads through a clean, user-friendly interface.
           Visitors can rate books based on their reading experience, helping others find top-rated content. A personalized wishlist feature lets users bookmark titles they’re 
           interested in, making it easy to track future reads.</p>
-
-          <h3>Challenges & Future Improvements</h3>
-          <p>
+<h3>Challenges &amp; Future Improvements</h3>
+<p>
             This was my first project using PHP, so getting started with server-side scripting and database integration came with a learning curve. One of the more persistent challenges was managing the layout and sizing of the book cards across different screen sizes, which required several iterations to get right.
           </p>
-          <p>
+<p>
             Implementing the rating system also presented difficulties, as early versions had a few bugs that affected user input and data consistency. Working with the database was another hurdle, but through this project, I was able to grasp the fundamentals of handling queries and storing user-generated content.
           </p>
-          <p>
+<p>
             Looking ahead, there are several areas I'd like to improve, including enhancing the user interface with better color choices, refining the layout structure, and introducing more dynamic features such as user reviews, filters, or animations to elevate the experience.
           </p>
-            <br>
-        <p>
-            
-      </section>
-    </main>
+<br/>
+<p>
+</p>
+          </div>
+        </section>
+
+      </div>
+    </section>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="Expanded view">
+      <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
+  </main>
+
+  <footer class="dm-footer">
+    <div class="dm-container">
+      <div class="dm-footer-inner">
+        <span>© <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#work">Work</a>
+        </span>
       </div>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>

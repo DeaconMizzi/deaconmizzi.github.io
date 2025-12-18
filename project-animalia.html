@@ -1,114 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Animalia – Project Page</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animalia – Project</title>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Game Dev</a></li>
-            <li class="nav-item"><a class="nav-link active" href="web-development.html">Web Dev</a></li>
-            <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/dm-modern.css" rel="stylesheet" />
+</head>
+
+<body class="dm-body">
+  <header class="dm-nav" id="mainNav">
+    <div class="dm-container dm-nav-inner">
+      <a class="dm-brand" href="index.html" aria-label="Home">
+        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
+      </a>
+
+      <nav class="dm-nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="dm-mobile-menu dm-container" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dm-project-hero" aria-label="Project intro">
+      <div class="dm-container">
+        <div class="dm-breadcrumb">
+          <a href="index.html#work">← Back to Work</a>
         </div>
-      </div>
-    </nav>
 
-    <br>
-    <br>
-    <!-- Main Project Content -->
-    <main class="project-page">
-      <section class="project-intro">
-        <div class="project-summary">
-          <p>
+        <div class="dm-project-hero-grid">
+          <div>
+            <h1 class="dm-project-title">Animalia</h1>
+            <div class="dm-prose">
+<p>
             The Animalia website serves as the official online hub for the animated series, 
             offering an inside look at its story, characters, latest updates, and featured media.
         </p>
+          </div>
+          </div>
+
+          <div>
+            <div class="dm-project-hero-media"><img src="assets/img/animalia.png" alt="Evershroud Banner" loading="lazy"></div>
+          </div>
         </div>
-        <div class="project-header">
-          <img src="assets/img/animalia.png" alt="Evershroud Banner" class="project-banner">
+      </div>
+    </section>
+
+    <section class="dm-project-body" aria-label="Project content">
+      <div class="dm-container">
+
+        
+
+        
+      <section class="dm-project-block" aria-label="Gallery">
+        <div class="dm-project-block-head">
+          <h2 class="dm-section-title">Gallery</h2>
+        </div>
+        <div class="dm-gallery">
+          <button class="dm-shot" type="button" data-shot="assets/img/portfolio/animalia1.png" aria-label="Home Page">
+            <img src="assets/img/portfolio/animalia1.png" alt="Home Page" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/animalia2.png" aria-label="Character Page">
+            <img src="assets/img/portfolio/animalia2.png" alt="Character Page" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/animalia3.png" aria-label="Character Info">
+            <img src="assets/img/portfolio/animalia3.png" alt="Character Info" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/animalia4.png" aria-label="Character Info">
+            <img src="assets/img/portfolio/animalia4.png" alt="Character Info" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/animalia5.png" aria-label="News">
+            <img src="assets/img/portfolio/animalia5.png" alt="News" loading="lazy" onclick="openLightbox(this)">
+          </button><button class="dm-shot" type="button" data-shot="assets/img/portfolio/animalia6.png" aria-label="Media">
+            <img src="assets/img/portfolio/animalia6.png" alt="Media" loading="lazy" onclick="openLightbox(this)">
+          </button>
         </div>
       </section>
 
+        
 
-      <section class="project-gallery">
-        <img src="assets/img/portfolio/animalia1.png" alt="Home Page" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia2.png" alt="Character Page" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia3.png" alt="Character Info" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia4.png" alt="Character Info" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia5.png" alt="News" onclick="openLightbox(this)">
-        <img src="assets/img/portfolio/animalia6.png" alt="Media" onclick="openLightbox(this)">
-      </section>
-
-      <section class="project-details">
-        <h3>Description</h3>
-        <p>The Animalia Website serves as the official online hub for the animated series, offering fans and viewers a centralized space to explore the show's story, characters, 
+        <section class="dm-project-block" aria-label="Details">
+          <div class="dm-project-block-head">
+            <h2 class="dm-section-title">Details</h2>
+          </div>
+          <div class="dm-prose">
+<h3>Description</h3>
+<p>The Animalia Website serves as the official online hub for the animated series, offering fans and viewers a centralized space to explore the show's story, characters, 
             updates, and media content. Designed to be both visually engaging and intuitive, the site reinforces the series’ identity through character-driven color palettes, 
             responsive layouts, and interactive media.</p>
-        <div class="project-wireframes">
-            <h3>Wireframes & Planning</h3>
-            <p>
+<div class="project-wireframes">
+<h3>Wireframes &amp; Planning</h3>
+<p>
                 Initial wireframes created to plan the Animalia website layout, content flow, and responsiveness. 
                 These helped guide development of the homepage, character pages, and media sections.
             </p>
-            
-            <img 
-                src="assets/img/portfolio/animaliawf.png" 
-                alt="Wireframe overview for Animalia website" 
-                class="wireframe-thumbnail"
-                onclick="openLightbox(this)"
-            />
-        </div>
-        <h3>Challenges and Insights</h3>
-        <p>
+<img alt="Wireframe overview for Animalia website" class="wireframe-thumbnail" onclick="openLightbox(this)" src="assets/img/portfolio/animaliawf.png">
+</img></div>
+<h3>Challenges and Insights</h3>
+<p>
             Designing a site for a fictional animated series introduced unique challenges:
           </p>
-          <ul>
-            <li>Ensuring consistency between sketch concepts and real implementation</li>
-            <li>Balancing playful visuals with functional navigation</li>
-            <li>Managing responsive design for custom character layouts</li>
-          </ul>
-          <h3>Limitations & Future Improvements</h3>
-            <p>
+<ul>
+<li>Ensuring consistency between sketch concepts and real implementation</li>
+<li>Balancing playful visuals with functional navigation</li>
+<li>Managing responsive design for custom character layouts</li>
+</ul>
+<h3>Limitations &amp; Future Improvements</h3>
+<p>
             While the current site successfully delivers the intended experience, there are areas to grow:
             </p>
-            <ul>
-            <li>Adding a searchable episode guide or interactive world map</li>
-            <li>Expanding the news section with filtering or tagging features</li>
-            <li>Implementing a content management system for easier updates</li>
-            </ul>
-            <br>
-        <p>
-            <div class="button-container">
-                <a href="https://deaconmizzi.github.io/Animalia/" target="_blank" class="btn btn-primary enlarged-btn">
+<ul>
+<li>Adding a searchable episode guide or interactive world map</li>
+<li>Expanding the news section with filtering or tagging features</li>
+<li>Implementing a content management system for easier updates</li>
+</ul>
+<br/>
+<p>
+<div class="button-container">
+<a class="btn btn-primary enlarged-btn" href="https://deaconmizzi.github.io/Animalia/" target="_blank">
                   🔗 Check out the Website
                 </a>
-              </div>
-      </section>
-    </main>
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="Expanded view">
+</div>
+</p>
+          </div>
+        </section>
+
       </div>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
+  </main>
+
+  <footer class="dm-footer">
+    <div class="dm-container">
+      <div class="dm-footer-inner">
+        <span>© <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#work">Work</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>
