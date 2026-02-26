@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>LinkUp – Project</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/dm-modern.css" rel="stylesheet">
+</link></link></head>
+<body class="dm-body">
+<header class="dm-nav" id="mainNav">
+<div class="dm-container dm-nav-inner">
+<a aria-label="Home" class="dm-brand" href="index.html">
+<img alt="DM logo" class="dm-logo" src="assets/img/LogoDM.png"/>
+</a>
+<nav aria-label="Primary" class="dm-nav-links">
+<a href="index.html#work">Work</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+<button aria-expanded="false" aria-label="Open menu" class="dm-nav-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+<div class="dm-mobile-menu dm-container" hidden="">
+<a href="index.html#work">Work</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+</header>
+<main>
+<section aria-label="Project intro" class="dm-project-hero">
+<div class="dm-container">
+<div class="dm-breadcrumb">
+<a href="index.html#work">← Back to Work</a>
+</div>
+<div class="dm-project-hero-grid">
+<div>
+<h1 class="dm-project-title">Podium</h1>
+<div class="dm-prose">
+<p>
+           Podium is a web application built for Magic: The Gathering Commander playgroups who want structured, competitive tracking of their multiplayer sessions. 
+           It replaces spreadsheets and scattered notes with a clean, modern system for logging games, analyzing performance, and visualizing long-term progression.
+          </p>
+</div>
+</div>
+<div>
+<div class="dm-project-hero-media"><img alt="Evershroud Banner" loading="lazy" src="assets/img/podium.png"/></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Project content" class="dm-project-body">
+<div class="dm-container"><section aria-label="Details" class="dm-project-block">
+<div class="dm-project-block-head">
+<h2 class="dm-section-title">Details</h2>
+</div>
+<div class="dm-prose">
+<h3>Description</h3>
+<p>Podium is a data-driven MTG Commander tracking platform designed around real multiplayer game nights. 
+  Users can create pods, log sessions, record decks and commanders played, and track wins across players and groups. Over time, the app aggregates meaningful statistics such as win rates, head-to-head records, pod-size performance, and deck efficiency.
+Built with a focus on clarity and usability, Podium transforms casual match history into transparent, competitive insight. 
+The interface is designed for dark-mode environments and structured dashboards, ensuring results remain readable, scalable, and easy to analyze across long-term playgroups.</p>
+<section aria-label="Gallery" class="dm-project-block">
+<div class="dm-project-block-head">
+<h2 class="dm-section-title">Gallery</h2>
+</div>
+<div class="dm-gallery">
+<button aria-label="Posts" class="dm-shot" data-shot="assets/img/portfolio/Podium1.png" type="button">
+<img alt="Posts" loading="lazy" onclick="openLightbox(this)" src="assets/img/portfolio/Podium1.png"/>
+</button><button aria-label="Roles" class="dm-shot" data-shot="assets/img/portfolio/Podium2.png" type="button">
+<img alt="Roles" loading="lazy" onclick="openLightbox(this)" src="assets/img/portfolio/Podium2.png"/>
+</button><button aria-label="Account" class="dm-shot" data-shot="assets/img/portfolio/Podium3.png" type="button">
+<img alt="Account" loading="lazy" onclick="openLightbox(this)" src="assets/img/portfolio/Podium3.png"/>
+</button><button aria-label="Post Page" class="dm-shot" data-shot="assets/img/portfolio/podium4.png" type="button">
+<img alt="Post Page" loading="lazy" onclick="openLightbox(this)" src="assets/img/portfolio/podium4.png"/>
+</button>
+<button aria-label="Post Page" class="dm-shot" data-shot="assets/img/portfolio/podim5.png" type="button">
+<img alt="Post Page" loading="lazy" onclick="openLightbox(this)" src="assets/img/portfolio/podium5.png"/>
+</button>
+<button aria-label="Post Page" class="dm-shot" data-shot="assets/img/portfolio/podium6.png" type="button">
+<img alt="Post Page" loading="lazy" onclick="openLightbox(this)" src="assets/img/portfolio/podium6.png"/>
+</button>
+</div>
+</section>
+
+<section class="project-notes">
+  <h3>Challenges</h3>
+
+  <p><strong>Learning React While Building at Scale</strong><br>
+    Podium was my first large-scale project built with React. Instead of experimenting with small demos, I committed to building a production-level application with complex state management, dynamic forms, conditional rendering, and reusable components. Structuring the app properly from the beginning while still learning React patterns was a significant challenge.
+  </p>
+
+  <p><strong>Managing a Large, Evolving Codebase</strong><br>
+    As the project grew to include sessions, groups, player identities, deck imports, statistics, and dashboards, maintaining consistency across components became increasingly complex. Refactoring early architectural decisions without breaking functionality required careful planning and iterative restructuring.
+  </p>
+
+  <p><strong>Firebase Security &amp; Permission Architecture</strong><br>
+    Implementing Firestore security rules and user-based permissions proved to be one of the most technically demanding aspects. Ensuring that users could only access their groups, players could claim identities securely, session data remained protected, and queries did not break due to rule restrictions required multiple revisions of the database structure and rule logic. Debugging permission-denied errors in production-like scenarios forced a deeper understanding of Firebase’s security model.
+  </p>
+
+  <h3>Insights</h3>
+
+  <p><strong>Build Structure Early, Even While Learning</strong><br>
+    Jumping straight into a full application accelerated my learning far more than isolated tutorials. Designing with scalability in mind from the beginning saved significant refactoring later.
+  </p>
+
+  <p><strong>Security Rules Shape Architecture</strong><br>
+    Firestore permissions are not an afterthought. They directly influence how data should be structured. I learned to design collections and document relationships around security constraints, not just convenience.
+  </p>
+
+  <p><strong>Data Becomes a Product Feature</strong><br>
+    Tracking multiplayer Commander sessions revealed how raw data transforms casual gameplay into measurable progression. Designing meaningful analytics such as win rates, head-to-head stats, and pod performance required thinking beyond basic CRUD and into product strategy.
+  </p>
+
+  <p><strong>Iteration is Design</strong><br>
+    UI and branding went through multiple redesigns. The biggest insight was that identity, clarity, and usability evolve together. A strong product feel is rarely achieved in the first version.
+  </p>
+</section>
+</section>
+
+
+</div>
+</section>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+<img alt="Expanded view" id="lightbox-img" src=""/>
+</div>
+</main>
+<footer class="dm-footer">
+<div class="dm-container">
+<div class="dm-footer-inner">
+<span>© <span id="dmYear"></span> Deacon Mizzi</span>
+<span class="dm-footer-links">
+<a href="contact.html">Contact</a>
+<a href="index.html#work">Work</a>
+</span>
+</div>
+</div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
