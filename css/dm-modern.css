@@ -622,6 +622,18 @@ img{ max-width: 100%; display:block; }
   filter: brightness(1.03);
 }
 
+.dm-gallery--large{
+  grid-template-columns: 1fr;
+  max-width: 980px;
+}
+
+.dm-gallery--large .dm-shot img{
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255,255,255,0.02);
+}
+
 @media (max-width: 520px){
   .dm-shot img{ height: 200px; }
 }
