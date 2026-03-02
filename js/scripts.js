@@ -64,8 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Lightbox (project pages)
-  const lightbox = document.getElementById('dmLightbox');
-  const lightboxImg = lightbox ? lightbox.querySelector('.dm-lightbox-img') : null;
+  const lightbox =
+    document.getElementById('dmLightbox') || document.getElementById('lightbox');
+  const lightboxImg = lightbox
+    ? lightbox.querySelector('.dm-lightbox-img, #lightbox-img, img')
+    : null;
   const closeBtn = lightbox ? lightbox.querySelector('.dm-lightbox-close') : null;
 
   const open = (src, alt) => {
@@ -73,12 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImg.src = src;
     lightboxImg.alt = alt || '';
     lightbox.classList.add('is-open');
+    if (lightbox.id === 'lightbox') {
+      lightbox.style.display = 'flex';
+    }
     lightbox.setAttribute('aria-hidden', 'false');
   };
 
   const close = () => {
     if (!lightbox) return;
     lightbox.classList.remove('is-open');
+    if (lightbox.id === 'lightbox') {
+      lightbox.style.display = 'none';
+    }
     lightbox.setAttribute('aria-hidden', 'true');
     if (lightboxImg) lightboxImg.src = '';
   };
@@ -100,4 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') close();
   });
+
+  // Back-compat for legacy inline handlers on project pages.
+  window.openLightbox = (imgEl) => {
+    if (!imgEl) return;
+    open(imgEl.src, imgEl.alt || '');
+  };
+  window.closeLightbox = () => close();
 });
