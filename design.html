@@ -1,112 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Deacon Mizzi - Portfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="assets/img/LogoDM.png" alt="DM Logo" class="dm-logo">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">Game Dev</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="web-development.html">Web Dev</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="design.html">Design</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        <!-- Masthead-->
-         <section class="hero-video">
-          <div class="video-embed-container">
-            <iframe id="bg-video"
-              src="https://www.youtube.com/embed/DkX1oCd4vLQ?autoplay=1&mute=1&controls=0&loop=1&playlist=DkX1oCd4vLQ&playsinline=1&modestbranding=1&showinfo=0"
-              title="Game Dev Intro"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen>
-            </iframe>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="UI/UX and visual design work by Deacon Mizzi." />
+  <title>Deacon Mizzi - Design</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/dm-modern.css" rel="stylesheet" />
+</head>
+<body class="dm-body">
+  <header class="dm-nav" id="mainNav">
+    <div class="dm-container dm-nav-inner">
+      <a class="dm-brand" href="index.html" aria-label="Home">
+        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
+      </a>
+
+      <nav class="dm-nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="dm-mobile-menu dm-container" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dm-project-hero" aria-label="Design intro">
+      <div class="dm-container">
+        <div class="dm-breadcrumb">
+          <a href="index.html#work">&larr; Back to Work</a>
+        </div>
+
+        <div class="dm-project-hero-grid">
+          <div>
+            <h1 class="dm-project-title">Design Work</h1>
+            <p class="dm-project-sub">
+              UI/UX and visual identity projects focused on hierarchy, readability, and conversion-oriented presentation.
+            </p>
+            <div class="dm-tags dm-tags--hero">
+              <span class="dm-tag dm-tag--grad">UI/UX</span>
+              <span class="dm-tag dm-tag--grad">Branding</span>
+              <span class="dm-tag dm-tag--grad">Visual Design</span>
+            </div>
           </div>
-            <div class="intro-overlay" id="introOverlay">
-                <h1>I’m Deacon Mizzi, a developer<br>& designer focused on<br>immersive<br>experiences!</h1>
+
+          <div class="dm-project-hero-media">
+            <img src="assets/img/bev2.png" alt="Bird's Eye View Banner" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dm-work" aria-label="Design projects">
+      <div class="dm-container">
+        <div class="dm-cards">
+          <a class="dm-card" href="project-bev.html">
+            <div class="dm-card-media">
+              <img src="assets/img/bev2.png" alt="Bird's Eye View" loading="lazy" />
             </div>
-          </section>
-<!-- Project 2: Text Right, Image Left -->
-          <section class="project-panel bg-b">
-            <div class="project-content">
-              <div class="project-image">
-                <a href="project-bev.html">
-                    <img src="assets/img/bev2.png" alt="Bird's Eye View">
-                </a>
-              </div>
-              <div class="project-text">
-                <h2>Bird's Eye View</h2>
-                <p>
-                    Complete branding development with logo, typography, and color palette. The visual identity emphasizes clarity, neutrality, and inclusivity, 
-                    using balanced tones and modern typography to reflect the initiative’s mission of fostering open, impartial discussion in Malta.
-                </p>
+            <div class="dm-card-body">
+              <div class="dm-card-title">Bird's Eye View</div>
+              <div class="dm-card-sub">Brand identity and guideline system</div>
+              <div class="dm-tags">
+                <span class="dm-tag dm-tag--grad">Branding</span>
+                <span class="dm-tag dm-tag--grad">Guidelines</span>
               </div>
             </div>
-          </section>
-        
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-          <!-- <div class="container"><small>Copyright &copy; Your Website 2023</small></div> -->
-        </div>        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-            function handleScroll() {
-              const overlay = document.getElementById('introOverlay');
-              const video = document.getElementById('bg-video');
-              const scrollY = window.scrollY;
-          
-              if (scrollY > 10) {
-                overlay.classList.add('show');
-                video.classList.add('blur');
-              } else {
-                overlay.classList.remove('show');
-                video.classList.remove('blur');
-              }
-            }
-          
-            window.addEventListener('scroll', handleScroll);
-            window.addEventListener('load', handleScroll);
-          </script>
-    </body>
+          </a>
+
+          <a class="dm-card" href="project-animalia.html">
+            <div class="dm-card-media">
+              <img src="assets/img/animalia.png" alt="Animalia" loading="lazy" />
+            </div>
+            <div class="dm-card-body">
+              <div class="dm-card-title">Animalia</div>
+              <div class="dm-card-sub">Series website and content design</div>
+              <div class="dm-tags">
+                <span class="dm-tag dm-tag--grad">UI/UX</span>
+                <span class="dm-tag dm-tag--grad">Frontend</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="dm-card" href="project-drivingacademy.html">
+            <div class="dm-card-media">
+              <img src="assets/img/WayneDrivingAcademy.png" alt="Wayne Driving Academy" loading="lazy" />
+            </div>
+            <div class="dm-card-body">
+              <div class="dm-card-title">Wayne Driving Academy</div>
+              <div class="dm-card-sub">Business-focused website layout</div>
+              <div class="dm-tags">
+                <span class="dm-tag dm-tag--grad">UI/UX</span>
+                <span class="dm-tag dm-tag--grad">Web Design</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="dm-footer">
+    <div class="dm-container">
+      <div class="dm-footer-inner">
+        <span>&copy; <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#work">Work</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
 </html>

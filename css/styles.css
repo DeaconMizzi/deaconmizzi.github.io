@@ -12,8 +12,8 @@
  */
  @font-face {
   font-family: 'Satoshi';
-  src: url('assets/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('assets/fonts/Satoshi-Regular.woff') format('woff');
+  src: url('../assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Satoshi-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
