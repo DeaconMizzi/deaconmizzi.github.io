@@ -73,13 +73,25 @@
 <div class="dm-project-block-head">
 <h2 class="dm-section-title">Gallery</h2>
 </div>
-<div class="dm-gallery dm-gallery--large">
-<button aria-label="Foundation for Educational Services mobile and dashboard screens 1" class="dm-shot" data-shot="assets/img/portfolio/fes-1.png" type="button">
+<div aria-label="Foundation for Educational Services gallery carousel" class="dm-carousel" data-autoplay="true" data-carousel>
+<div class="dm-carousel-viewport">
+<div class="dm-carousel-track">
+<button aria-label="Foundation for Educational Services mobile and dashboard screens 1" class="dm-shot dm-carousel-slide is-active" data-shot="assets/img/portfolio/fes-1.png" type="button">
 <img alt="Foundation for Educational Services mobile and dashboard screens 1" loading="lazy" src="assets/img/portfolio/fes-1.png"/>
 </button>
-<button aria-label="Foundation for Educational Services mobile and dashboard screens 2" class="dm-shot" data-shot="assets/img/portfolio/fes-2.png" type="button">
+<button aria-label="Foundation for Educational Services mobile and dashboard screens 2" class="dm-shot dm-carousel-slide" data-shot="assets/img/portfolio/fes-2.png" type="button">
 <img alt="Foundation for Educational Services mobile and dashboard screens 2" loading="lazy" src="assets/img/portfolio/fes-2.png"/>
 </button>
+</div>
+</div>
+<div class="dm-carousel-controls">
+<button aria-label="Previous image" class="dm-carousel-arrow dm-carousel-arrow--prev" data-carousel-prev type="button">Prev</button>
+<div aria-label="Choose gallery image" class="dm-carousel-dots" role="tablist">
+<button aria-label="Show image 1" aria-selected="true" class="dm-carousel-dot is-active" data-carousel-dot="0" role="tab" type="button"></button>
+<button aria-label="Show image 2" aria-selected="false" class="dm-carousel-dot" data-carousel-dot="1" role="tab" type="button"></button>
+</div>
+<button aria-label="Next image" class="dm-carousel-arrow dm-carousel-arrow--next" data-carousel-next type="button">Next</button>
+</div>
 </div>
 </section>
 
