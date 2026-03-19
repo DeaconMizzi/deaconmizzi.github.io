@@ -699,6 +699,7 @@ img{ max-width: 100%; display:block; }
   justify-content: center;
   gap: 10px;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .dm-carousel-dot{

@@ -167,6 +167,13 @@ document.addEventListener('DOMContentLoaded', () => {
   let closeBtn = lightbox ? lightbox.querySelector('.dm-lightbox-close') : null;
   const galleryShots = Array.from(document.querySelectorAll('[data-shot]'));
   let currentShotIndex = -1;
+  let currentShotGroup = [];
+
+  const getShotGroupName = (shot) => shot.dataset.shotGroup || '__default__';
+  const getShotGroup = (shot) => {
+    const groupName = getShotGroupName(shot);
+    return galleryShots.filter((candidate) => getShotGroupName(candidate) === groupName);
+  };
 
   if (lightbox && !closeBtn) {
     closeBtn = document.createElement('button');
@@ -199,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const updateLightboxNav = () => {
-    const hasGallery = galleryShots.length > 1;
+    const hasGallery = currentShotGroup.length > 1;
     if (prevBtn) prevBtn.hidden = !hasGallery;
     if (nextBtn) nextBtn.hidden = !hasGallery;
     if (prevBtn) prevBtn.disabled = !hasGallery;
@@ -207,9 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const showShotAt = (nextIndex) => {
-    if (!lightbox || !lightboxImg || !galleryShots.length) return;
-    currentShotIndex = (nextIndex + galleryShots.length) % galleryShots.length;
-    const shot = galleryShots[currentShotIndex];
+    if (!lightbox || !lightboxImg || !currentShotGroup.length) return;
+    currentShotIndex = (nextIndex + currentShotGroup.length) % currentShotGroup.length;
+    const shot = currentShotGroup[currentShotIndex];
     const src = shot.getAttribute('data-shot');
     const img = shot.querySelector('img');
     lightboxImg.src = src || '';
@@ -217,11 +224,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLightboxNav();
   };
 
-  const open = (src, alt, shotIndex = -1) => {
+  const open = (src, alt, shotIndex = -1, shotGroup = []) => {
     if (!lightbox || !lightboxImg) return;
-    if (shotIndex >= 0 && galleryShots.length) {
+    if (shotIndex >= 0 && shotGroup.length) {
+      currentShotGroup = shotGroup;
       showShotAt(shotIndex);
     } else {
+      currentShotGroup = [];
       currentShotIndex = -1;
       lightboxImg.src = src;
       lightboxImg.alt = alt || '';
@@ -242,20 +251,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     lightbox.setAttribute('aria-hidden', 'true');
     if (lightboxImg) lightboxImg.src = '';
+    currentShotGroup = [];
     currentShotIndex = -1;
   };
 
   const stepLightbox = (direction) => {
-    if (!lightbox || !lightbox.classList.contains('is-open') || !galleryShots.length) return;
+    if (!lightbox || !lightbox.classList.contains('is-open') || !currentShotGroup.length) return;
     const baseIndex = currentShotIndex >= 0 ? currentShotIndex : 0;
     showShotAt(baseIndex + direction);
   };
 
   galleryShots.forEach((btn, shotIndex) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (event) => {
+      if (event.defaultPrevented) return;
       const src = btn.getAttribute('data-shot');
       const img = btn.querySelector('img');
-      open(src, img ? img.alt : '', shotIndex);
+      const shotGroup = getShotGroup(btn);
+      const groupedIndex = shotGroup.indexOf(btn);
+      open(src, img ? img.alt : '', groupedIndex >= 0 ? groupedIndex : shotIndex, shotGroup);
     });
   });
 
